@@ -1,38 +1,36 @@
-import styles from "./Header.module.css"
-import logoImage from "../../Source/Logo.png";
-
-function Header(){
+import styles from "./Header.module.css";
+import {Button, Navbar, Nav, NavDropdown, Image, Container } from 'react-bootstrap';
+import LogoImage from "../../Source/Logo.png"
+function Header() {
     return (
-        <div className={`container ${styles.header}`}>
-            <div className="row">
-                <div className={`col-sm-1 ${styles.log} d-flex justify-content-center align-items-center`}>
-                    <img src={logoImage}/>
-                </div>
-                <div className={`col-sm col-8 ${styles.navigation}`}>
-                    <div className="row">
-                        <div className="col-sm-2 col-1">
-                            <a href="#">Home</a> 
-                        </div>
-                        <div className="col-sm-2 col-1">
-                            <a href="#">Landing</a>
-                        </div>
-                        <div className="col-sm-2 col-1">
-                            <a href="#">Pages</a>
-                        </div>
-                        <div className="col-sm-2 col-1">
-                            <a href="#">Docs</a>
-                        </div>
-                        <div className="col-sm-2 col-1">
-                            <a href="#">Help</a>
-                        </div>
-                    </div>
-                </div>
-                <div className={`col-sm-1  col-3 ${styles.rightMenu} d-flex justify-content-center align-items-center`}>
-                    <button>Login</button>
-                </div>
-            </div>
-        </div>
-    )
+      <Navbar expand="md" className='bg-body-temporary mt-3'>
+        {/* <p className={styles.customDropdownTitle}>dskjblsdhbl</p> */}
+        <Container>
+            <Navbar.Brand href="#home">
+                <Image src={LogoImage}></Image>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto gap-3">
+                <Nav.Link href="#home" className='text-light'>Home</Nav.Link>
+                <NavDropdown title={<span className={styles.customDropdownTitle}>Landing</span>} id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1" >1</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">2</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">3</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title={<span className={styles.customDropdownTitle}>Pages</span>} id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Pages 1</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Pages 2</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Pages 3</NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link href="Docs" className='text-light'>Docs</Nav.Link>
+                <Nav.Link href="Help" className='text-light'>Help</Nav.Link>
+                <Button variant="primary">Login</Button>
+            </Nav>
+            </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    );
 }
 
 export default Header;
