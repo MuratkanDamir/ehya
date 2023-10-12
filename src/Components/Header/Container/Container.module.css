@@ -1,4 +1,42 @@
-.custom-card {
-    background: rgba(255, 255, 255, 0); /* Прозрачный белый фон */
-    border: 0;
-  }
+:root {
+    --arrow-color: white; /* Здесь вы определяете переменную и устанавливаете ей значение */
+}
+
+.arrow1 {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    margin: 20px;
+}
+.arrow1 div {
+    position: relative;
+    top: 10px;
+    width: 20px;
+    height: 2px;
+    background-color: var(--arrow-color);
+    left:0;
+    display: block;
+}
+
+.arrow1 div::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: -3px;
+    right: -2px;
+    background-color: var(--arrow-color);
+    transform: rotate(45deg);
+}
+.arrow1 div::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 3px;
+    right: -2px;
+    background-color: var(--arrow-color);
+    transform: rotate(-45deg);
+}
