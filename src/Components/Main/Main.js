@@ -1,8 +1,8 @@
 import Companies from "./Companies/Companies";
-
+import styles from "./Main.module.css"
 function Main(){
     return(
-        <div>
+        <div className={styles.main}>
             <Companies />
         </div>
     );

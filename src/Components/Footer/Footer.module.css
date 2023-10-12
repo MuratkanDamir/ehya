@@ -1,0 +1,21 @@
+.footer{
+    height: 400px;
+    background-color: #081315;
+}
+
+.aStyle{
+    text-decoration: none;
+    color: #D3D6D8;
+    font-size: 15px;
+    padding-left: 0;
+}
+.aStyle:hover{
+    cursor: pointer;
+    color: blueviolet;
+}
+.ulStyle{
+    padding-left: 0;
+}
+.ulStyle li{
+    padding-top: 15px;
+}
