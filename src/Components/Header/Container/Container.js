@@ -5,7 +5,7 @@ function Container(){
     return(
         <div className="container">
            <Card className="col-12 col-md-7 border border-0" bg="transparent" border="transparent">
-                <Card.Body className="mt-2 mt-md-3 mt-lg-4">
+                <Card.Body style={{paddingTop: '20%',paddingBottom: '20%'}}>
                     <Card.Title style={{ fontSize: '65px', color: "white"}}>We help you</Card.Title>
                     <Card.Title style={{ fontSize: '65px', color: "white" }}>grow your business faster</Card.Title>
                     <Image src={curveImg}></Image>
@@ -22,7 +22,7 @@ function Container(){
                         </NavLink>    
                     </div>
                 </Card.Body>
-            </Card> 
+            </Card>
         </div>
     );
 };
