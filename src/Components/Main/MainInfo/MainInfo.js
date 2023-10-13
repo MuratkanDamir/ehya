@@ -5,7 +5,7 @@ function MainInfo(){
         <div>
             <div class="container text-center pt-5 pb-5">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6  mb-5">
                         <img src={phoneImages} style={{width:'70%', heigth:'30%'}}></img>
                     </div>
                     <div class="col-12 col-md-6 d-flex text-start flex-column justify-content-center gap-4">

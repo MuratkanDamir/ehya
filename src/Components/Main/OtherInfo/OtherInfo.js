@@ -7,7 +7,7 @@ function OtherInfo(){
         <div>
             <div class="container text-center mt-5 mb-5 pt-5 pb-5">
                 <div class="row">
-                    <div class="col-12 col-md-6 d-flex text-start flex-column justify-content-center gap-4">
+                    <div class="col-12 col-md-6 d-flex text-start flex-column justify-content-center gap-4 mb-5">
                         <h3 style={{color: '#034D82'}}>Schedule Your Post Whenever You Want</h3>
                         <p style={{color: '#90A3B4'}}>Publish your content automatically to ensure that your content reaches the right people. Built-in features such as</p>
                         <ul style={{paddingLeft:'0px'}}>

@@ -30,7 +30,7 @@ function Feedback() {
     };
 
     return (
-    <div className="container pt-5 pb-5">
+    <div className="container pb-5 mb-5">
         <div className="row">
             <div className="col-12 col-md-5 d-flex flex-column justify-content-center">
                 <h1>Powering the growth of 100+ business & retailers in Indonesia.</h1>
