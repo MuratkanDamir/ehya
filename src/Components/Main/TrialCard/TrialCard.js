@@ -67,7 +67,7 @@ function TrialCard(){
             <div class="row pb-3">
                 <div class="col-12 col-sm-8 col-md-5 ps-5">
                     <div class="card text-start" style={{backgroundColor: 'rgba(255, 0, 0, 0)', border:'none'}}>
-                    <div class="card-body pt-5 ps-5">
+                    <div class="card-body pt-5 ps-4">
                             <h1 class="card-title text-light">Grow your brand <br/>presence on social media 😍</h1>
                             <p class="card-text mt-4 mb-4  text-light">Join with more 1200+ happy customers</p>
                             <div className={styles.images} style={{marginBottom: '100px'}}>
