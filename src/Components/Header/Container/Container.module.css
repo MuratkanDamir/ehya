@@ -1,7 +1,6 @@
 :root {
     --arrow-color: white; /* Здесь вы определяете переменную и устанавливаете ей значение */
 }
-
 .arrow1 {
     display: inline-block;
     cursor: pointer;

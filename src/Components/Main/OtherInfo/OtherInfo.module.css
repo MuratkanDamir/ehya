@@ -1,0 +1,51 @@
+:root {
+    --arrow-color: #04AADD; /* Здесь вы определяете переменную и устанавливаете ей значение */
+}
+
+.forLi{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.forLi p{
+    padding-top: 3%;
+    /* border: 1px solid black; */
+}
+.arrow1 {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    margin: 20px;
+}
+.arrow1 div {
+    position: relative;
+    top: 10px;
+    width: 20px;
+    height: 2px;
+    background-color: var(--arrow-color);
+    left:0;
+    display: block;
+}
+
+.arrow1 div::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: -3px;
+    right: -2px;
+    background-color: var(--arrow-color);
+    transform: rotate(45deg);
+}
+.arrow1 div::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 3px;
+    right: -2px;
+    background-color: var(--arrow-color);
+    transform: rotate(-45deg);
+}

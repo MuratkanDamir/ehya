@@ -12,3 +12,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Стили для десктопных устройств (например, ширина экрана больше 768px) */
+/* Убираем горизонтальную прокрутку */
+@media (min-width: 769px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Стили для мобильных устройств (например, ширина экрана меньше 768px) */
+/* Восстанавливаем горизонтальную прокрутку */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
